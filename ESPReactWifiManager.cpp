@@ -40,6 +40,7 @@ typedef wifi_sta_config_t sta_config_t;
 #define ARDUINOJSON_ENABLE_PROGMEM 1
 #include <ArduinoJson.h>
 #include <AsyncJson.h>
+#include <vector>
 
 namespace {
 
