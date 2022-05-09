@@ -412,8 +412,7 @@ bool ESPReactWifiManager::connect()
         tempPassword += F(":");
         tempPassword += connectPassword;
 #if defined(ESP32)
-        esp_wpa2_config_t config = WPA2_CONFIG_INIT_DEFAULT();
-        esp_wifi_sta_wpa2_ent_enable(&config);
+        esp_wifi_sta_wpa2_ent_enable();
 #else
         wifi_station_set_wpa2_enterprise_auth(1);
 #endif
